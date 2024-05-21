@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanche</title>
+</head>
+<body>
+
+    <input id="codigo" type="number" min="0" placeholder="código"/>
+    <input id="quantidade" type="number" min="1" placeholder="quantidade"/>
+    <button onclick="pedido()">Adicionar</button>
+    <button onclick="limparPedido()">Limpar pedido</button>
+    <button onclick="listConsulta()">Consultar lista de itens</button>
+    <button onclick="limparConsulta()">Limpar Consulta</button>
+
+    <br>
+
+    <table border="1">
+        <tbody id="tblItens"></tbody>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Item</th>
+            <th>Quantidade</th>
+            <th>Valor unitário</th>
+            <th>Valor total</th>
+        </tr>
+        <tbody id="tblPedido"></tbody>
+    </table>
+    
+    <script src="./lanche.js"></script>
+</body>
+</html>
